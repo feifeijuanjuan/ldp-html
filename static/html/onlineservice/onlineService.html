@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--双核浏览器默认选择 WebKit 内核渲染-->
+    <meta name="renderer" content="webkit">
+    <title>共享服务中心-在线服务</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/plugins/bootstrap-select/bootstrap-select.css">
+    <link href="../../css/style.css" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<div class="wrapper animated fadeInRight">
+    <!--聊天-->
+    <div class="col-sm-8">
+
+    </div>
+    <!--右侧-->
+    <div class="col-sm-4">
+        <div class="chat-right">
+            <h3>张三<span>（LVDP7）</span></h3>
+            <div class="text-overflow">中国石化/润滑油公司//润滑油公司/润滑油公司/润滑油公司/中国石化/润滑油公司//润滑油公司/润滑油公司/润滑油公司/</div>
+            <div><i class="fa fa-phone-square" aria-hidden="true"></i>010-628900000</div>
+            <div><i class="fa fa-envelope" aria-hidden="true"></i>zhangsan@pcitc.com</div>
+            <form action="" class="pt20">
+                <div class="form-group">
+                    <div class="ivu-form-item-label-md">
+                        <label>服务类型：</label>
+                    </div>
+                    <div class="ivu-form-item-content-md">
+                        <select class="selectpicker ipt-type" title="请选择">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ivu-form-item-label-md">
+                        <label>服务分类：</label>
+                    </div>
+                    <div class="ivu-form-item-content-md">
+                        <select class="selectpicker ipt-type" title="请选择">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ivu-form-item-label-md">
+                        <label>服务单号：</label>
+                    </div>
+                    <div class="ivu-form-item-content-md ipt-icon">
+                        <input type="text" class="ipt-type" placeholder="请选择">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ivu-form-item-label-md">
+                        <label>负责人：</label>
+                    </div>
+                    <div class="ivu-form-item-content-md ipt-icon">
+                        <input type="text" class="ipt-type" placeholder="请选择">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ivu-form-item-label-md">
+                        <label>问题描述：</label>
+                    </div>
+                    <div class="ivu-form-item-content-md">
+                        <textarea cols="30" rows="3" placeholder="请输入" class="textarea-type"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ivu-form-item-label-md">
+                        <label>问题回复：</label>
+                    </div>
+                    <div class="ivu-form-item-content-md">
+                        <textarea cols="30" rows="3" placeholder="请输入" class="textarea-type"></textarea>
+                    </div>
+                </div>
+                <div class="query-statu form-group" style="margin-top: 0">
+                    <div class="ivu-form-item-label-md">
+                        <span>交互状态：</span>
+                    </div>
+                    <div class="ivu-form-item-content-md">
+                        <ul class="clearfix tab-title">
+                            <li class="active">处理中</li>
+                            <li>完毕</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group file-upload">
+                    <div class="ivu-form-item-label-md">
+                        <label>附件上传：</label>
+                    </div>
+                    <div class="ivu-form-item-content-md">
+                        <div>这是一个附件</div>
+
+                        <div>
+                            <input type="file" id="uploadfile" class="hide" name="uploadfile"/>
+                            <i class="fa fa-plus-square-o" aria-hidden="true" id="filecontainer"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="fl">
+                        <input type="checkbox">转知识库
+                    </div>
+                    <div class="fr">
+                        <button class="btn-save ipt-btn">
+                            保存
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<!--弹窗插件-->
+<script src="../../js/plugins/layer/layer.js"></script>
+<!--下拉别表-->
+<script src="../../js/plugins/bootstrap-select/bootstrap-select.js"></script>
+<!--页面js-->
+<script src="../../js/pages/onlineservice/onlineService.js"></script>
+</body>
+</html>
