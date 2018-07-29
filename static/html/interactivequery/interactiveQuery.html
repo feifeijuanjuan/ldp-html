@@ -16,6 +16,9 @@
 </head>
 <body class="gray-bg" style="overflow-y: hidden">
 <div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="heading">
+        交互查询
+    </div>
     <!--查询条件-->
     <div class="search-box clearfix">
         <div class="row clearfix">
@@ -34,7 +37,7 @@
                 </div>
                 <div class="ivu-form-item-content-md">
                     <select class="selectpicker ipt-type" title="">
-                        <option value="1"></option>
+                        <option value="1">服务类型1</option>
                         <option value="2"></option>
                     </select>
                 </div>
@@ -80,7 +83,25 @@
                     </select>
                 </div>
             </div>
-            <div class="fr mb15">
+            <div class="form-group col-sm-3 ">
+                <div class="ivu-form-item-label-md">
+                    <label>服务单号：</label>
+                </div>
+                <div class="ivu-form-item-content-md">
+                    <input type="text" class="ipt-type"/>
+                </div>
+
+            </div>
+            <div class="form-group col-sm-3 ">
+                <div class="ivu-form-item-label-md">
+                    <label>负责人：</label>
+                </div>
+                <div class="ivu-form-item-content-md">
+                    <input type="text" class="ipt-type"/>
+                </div>
+
+            </div>
+            <div class="fr mb10">
                 <button class="ipt-btn btnprimary mr5">查询</button>
                 <button class="ipt-btn btndefault mr15">重置</button>
             </div>
@@ -92,7 +113,8 @@
         <!--操作按钮-->
         <div class="tb-btn-box clearfix">
             <div class="fr">
-                <button class="tb-btn-fr">
+                <button class="ipt-btn btndefault">
+                    <i class="fa fa-external-link"></i>
                     导出
                 </button>
             </div>

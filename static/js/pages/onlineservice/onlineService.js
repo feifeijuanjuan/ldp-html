@@ -13,6 +13,6 @@ $(function () {
         //获取文件名长度
         var arr=upFileName.split('\\');
         var filename=arr[arr.length-1];
-        $("#uploadfile").parent().before("<div>"+filename+"</div>");
+        $("#uploadfile").parent().before("<div class='service-upload'>"+filename+"<i class=\"fa fa-times-circle\" aria-hidden=\"true\"></i></div>");
     });
 });

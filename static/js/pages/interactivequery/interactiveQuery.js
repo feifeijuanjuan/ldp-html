@@ -8,38 +8,38 @@ $(function () {
     });
 });
 var mydata = [{
-    code: "",
+    code: "14555555545",
     type: "IT共享",
     des: "问题描述",
     name: "张三",
-    statu: "状态一",
+    statu: "0",
     date: "2018-01",
     handle: '编辑'
 },
     {
-        code: "",
+        code: "14555555545",
         type: "IT共享",
         des: "问题描述",
         name: "张三",
-        statu: "状态一",
+        statu: "1",
         date: "2018-01",
         handle: '编辑'
     },
     {
-        code: "",
+        code: "14555555545",
         type: "IT共享",
         des: "问题描述",
         name: "张三",
-        statu: "状态一",
+        statu: "0",
         date: "2018-01",
         handle: '编辑'
     },
     {
-        code: "",
+        code: "14555555545",
         type: "IT共享",
         des: "问题描述",
         name: "张三",
-        statu: "状态一",
+        statu: "1",
         date: "2018-01",
         handle: '编辑'
     }
@@ -52,16 +52,22 @@ function queryTableInit() {
         "useCheckAll": false,
         colNames: ['交互编号', '服务类型', '问题描述', "客户名称", "交互状态", "受理日期", "操作"],//jqGrid的列显示名字
         colModel: [ //jqGrid每一列的配置信息。包括名字，索引，宽度,对齐方式.....
-            {
-                name: 'code', index: 'code', width: 100, select: false, formatter: function () {
-                    var querycode = "<span class='handle-color' onclick='openCode()'>14555555545</span>";
-                    return querycode;
-                }
-            },
+            {name: 'code', index: 'code', width: 100},
             {name: 'type', index: 'type', width: 80},
             {name: 'des', index: 'des', width: 80},
             {name: 'name', index: 'name', width: 80},
-            {name: 'statu', index: 'statu', width: 100},
+            {
+                name: 'statu', index: 'statu', width: 100,
+                formatter: function (cellvalue, options, rowObject) {
+                    var statu=cellvalue;
+                    if(statu==0){
+                        statu = "<span><img src='../../img/statu0.png' alt='' class='statu'>处理中</span>"
+                    }else{
+                        statu = "<span><img src='../../img/statu1.png' alt='' class='statu'>已完成</span>"
+                    }
+                    return statu;
+                }
+            },
             {name: 'date', index: 'date', width: 100},
             {
                 name: 'handle', index: 'handle', width: 100, select: false, formatter: function () {
@@ -82,7 +88,6 @@ function queryTableInit() {
 function openCode() {
     layer.open({
         shade: 0.8,
-        btnAlign: 'c',
         resize: false,
         type: 2,
         fix: true,

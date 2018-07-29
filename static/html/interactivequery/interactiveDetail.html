@@ -15,226 +15,358 @@
 <body>
 <div class="wrapper wrapper-content  animated fadeInRight">
     <div class="row clearfix">
-        <div class="col-sm-4">
-            <!--基本信息-->
-            <div class="module">
-                <h3 class="title">张三（14555555545）</h3>
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>所在单位：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md ">
-                        中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台
-                    </div>
-                </div>
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>电话：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md ">
-                        010-234898989
-                    </div>
-                </div>
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>邮箱：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md ">
-                        zhangsan@pcitc.com
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <!--基本信息-->
+                        <div class="module col-sm-6">
+                            <div class="title clearfix baiscdata">
+                                <div class="fl">
+                                    <div class="name">张三</div>
+                                    <div class="account">
+                                        账号：14555555545
+                                    </div>
+                                </div>
+                                <div class="fr">
+                                    <img src="../../img/side-title.png" alt="" width="39" height="31">
+                                </div>
+                            </div>
+                            <div class="ivu-form-item file-item">
+                                <div class="ivu-form-item-label-sm">
+                                    <label><i class="fa fa-home"></i></label>
+                                </div>
+                                <div class="ivu-form-item-content-sm">
+                                    中国石化/润滑油公司//润滑油公司/润滑油公司/润滑油公司/中国石化/润滑油公司//润滑油公司/润滑油公司/润滑油公司/
+                                </div>
+                            </div>
+
+                            <div class="ivu-form-item file-item">
+                                <div class="ivu-form-item-label-sm">
+                                    <label><i class="fa fa-phone-square" aria-hidden="true"></i></label>
+                                </div>
+                                <div class="ivu-form-item-content-sm">
+                                    010-628900000
+                                </div>
+                            </div>
+                            <div class="ivu-form-item file-item">
+                                <div class="ivu-form-item-label-sm">
+                                    <label><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                                </div>
+                                <div class="ivu-form-item-content-sm">
+                                    zhangsan@pcitc.com
+                                </div>
+                            </div>
+                        </div>
+                        <!--附件信息-->
+                        <div class="module col-sm-6 files">
+                            <div class="title clearfix">
+                                <div class="fl"><span class="line"></span>附件信息</div>
+                                <div class="fr uploadfile">
+                                    <input type="file" id="uploadfile" class="hide" name="uploadfile"/>
+                                    <div id="filecontainer">
+                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                                        添加附件
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="ivu-form-item file-item">
+                                <div class="ivu-form-item-label-sm">
+                                    <label><i class="fa fa-file-word-o" aria-hidden="true"></i></label>
+                                </div>
+                                <div class="ivu-form-item-content-sm">
+                                    <div class="clearfix">
+                                        <div class="filebox">
+                                            <div class="file-name">
+                                                我是word.word
+                                            </div>
+                                            <div class="file-opt">
+                                                <a href=""><i class="fa fa-arrow-circle-down"
+                                                              aria-hidden="true"></i></a>
+                                                <i class="fa fa-times-circle" aria-hidden="true"
+                                                   onclick="delFile(this)"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="file-detail">
+                                            <span>上传人：</span><span class="name">张三</span> <span>上传时间：</span><span>
+                                            2018/06/12
+                                            18:20:20</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ivu-form-item file-item">
+                                <div class="ivu-form-item-label-sm">
+                                    <label><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i></label>
+                                </div>
+                                <div class="ivu-form-item-content-sm ">
+                                    <div class="clearfix">
+                                        <div class="filebox">
+                                            <div class="file-name">
+                                                我是PPT文件.ppt
+                                            </div>
+                                            <div class="file-opt">
+                                                <a href=""><i class="fa fa-arrow-circle-down"
+                                                              aria-hidden="true"></i></a>
+                                                <i class="fa fa-times-circle" aria-hidden="true"
+                                                   onclick="delFile(this)"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="file-detail">
+                                            <span>上传人：</span><span class="name">张三</span> <span>上传时间：</span><span>
+                                            2018/06/12
+                                            18:20:20</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ivu-form-item file-item">
+                                <div class="ivu-form-item-label-sm">
+                                    <label><i class="fa fa-file-pdf-o" aria-hidden="true"></i></label>
+                                </div>
+                                <div class="ivu-form-item-content-sm">
+                                    <div class="clearfix">
+                                        <div class="filebox">
+                                            <div class="file-name">
+                                                我是PDF文件.pdf
+                                            </div>
+                                            <div class="file-opt">
+                                                <a href=""><i class="fa fa-arrow-circle-down"
+                                                              aria-hidden="true"></i></a>
+                                                <i class="fa fa-times-circle" aria-hidden="true"
+                                                   onclick="delFile(this)"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="file-detail">
+                                            <span>上传人：</span><span class="name">张三</span> <span>上传时间：</span><span>
+                                            2018/06/12
+                                            18:20:20</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!--附件信息-->
-            <div class="module">
-                <h3 class="title">附件信息：</h3>
-                <div class="ivu-form-item file-item">
-                    <a href="#">
-                        <div class="ivu-form-item-label-md">
-                            <label><i class="fa fa-file-text-o" aria-hidden="true"></i></label>
-                        </div>
-                        <div class="ivu-form-item-content-md">
-                            文档文档文档
-                            <div class="file-detail hide">
-                                <div class="ivu-item">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="module">
+                        <h3 class="title mb20"><span class="line"></span>交互基本信息</h3>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="ivu-form-item">
                                     <div class="ivu-form-item-label-md">
-                                        <label>上传人：</label>
+                                        <label>交互编号：</label>
                                     </div>
                                     <div class="ivu-form-item-content-md ">
-                                        张三
+                                        14555555545
                                     </div>
                                 </div>
-                                <div class="ivu-item">
+                                <div class="ivu-form-item">
                                     <div class="ivu-form-item-label-md">
-                                        <label>上传时间：</label>
+                                        <label>服务类型：</label>
                                     </div>
                                     <div class="ivu-form-item-content-md ">
-                                        2018/06/12 18:20:20
+                                        财务共享
                                     </div>
                                 </div>
+                                <div class="ivu-form-item">
+                                    <div class="ivu-form-item-label-md">
+                                        <label>服务单号：</label>
+                                    </div>
+                                    <div class="ivu-form-item-content-md " style="color: #1E9FFF">
+                                        134455
+                                    </div>
+                                </div>
+                                <div class="ivu-form-item">
+                                    <div class="ivu-form-item-label-md" style="margin-top: 5px;">
+                                        <label>负责人：</label>
+                                    </div>
+                                    <div class="ivu-form-item-content-md ipt-icon">
+                                        <input type="text" class="ipt-type" placeholder="请选择">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="ivu-form-item">
+                                    <div class="ivu-form-item-label-md">
+                                        <label>受理人：</label>
+                                    </div>
+                                    <div class="ivu-form-item-content-md">
+                                        李四
+                                    </div>
+                                </div>
+                                <div class="ivu-form-item">
+                                    <div class="ivu-form-item-label-md">
+                                        <label>受理时间：</label>
+                                    </div>
+                                    <div class="ivu-form-item-content-md">
+                                        2018/07/28 16:30:00
+                                    </div>
+                                </div>
+                                <div class="ivu-form-item">
+                                    <div class="ivu-form-item-label-md">
+                                        <label>受理周期：</label>
+                                    </div>
+                                    <div class="ivu-form-item-content-md">
+                                        23.00小时
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="col-sm-7">
+                                <div class="ivu-form-item">
+                                    <div class="ivu-form-item-label-md">
+                                        <label>问题描述：</label>
+                                    </div>
+                                    <div class="ivu-form-item-content-md">
+                                        <textarea cols="30" rows="5" class="textarea-type" placeholder="请输入"></textarea>
+                                    </div>
+                                </div>
+                                <div class="ivu-form-item">
+                                    <div class="ivu-form-item-label-md">
+                                        <label>问题回复：</label>
+                                    </div>
+                                    <div class="ivu-form-item-content-md ">
+                                        <textarea cols="30" rows="5" class="textarea-type" placeholder="请回复"></textarea>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </a>
 
-                </div>
-                <div class="ivu-form-item file-item">
-                    <a href="#">
-                        <div class="ivu-form-item-label-md">
-                            <label><i class="fa fa-file-text-o" aria-hidden="true"></i></label>
-                        </div>
-                        <div class="ivu-form-item-content-md ">
-                            文档文档文档 文档文档文档 文档文档文档 文档文档文档 文档文档文档 文档文档文档
-                        </div>
-                    </a>
 
-                </div>
-                <div class="ivu-form-item file-item">
-                    <a href="#">
-                        <div class="ivu-form-item-label-md">
-                            <label><i class="fa fa-file-text-o" aria-hidden="true"></i></label>
-                        </div>
-                        <div class="ivu-form-item-content-md">
-                            文档文档文档
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="module" style="margin-top: 38px">
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>交互编号：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md ">
-                        14555555545
-                    </div>
-                </div>
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>服务类型：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md ">
-                        财务共享
-                    </div>
-                </div>
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>服务单号：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md " style="color: #1E9FFF">
-                        134455
-                    </div>
-                </div>
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>服务分类：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md ">
-                        无
-                    </div>
-                </div>
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>服务方式：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md">
-                        IT共享
-                    </div>
-                </div>
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>问题描述：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md">
-                        <textarea cols="30" rows="5" class="textarea-type" placeholder="请输入"></textarea>
-                    </div>
-                </div>
-                <div class="ivu-form-item">
-                    <div class="ivu-form-item-label-md">
-                        <label>问题回复：</label>
-                    </div>
-                    <div class="ivu-form-item-content-md ">
-                        <textarea cols="30" rows="5" class="textarea-type" placeholder="请回复"></textarea>
                     </div>
                 </div>
             </div>
+
         </div>
+
         <div class="col-sm-4">
-            <div class="module" style="margin-top: 38px">
-                <h3 class="title">流转记录：</h3>
-                <div class="timeline">
-                    <div id="vertical-timeline" class="vertical-container light-timeline">
-                        <div class="vertical-timeline-block">
-                            <div class="vertical-timeline-icon ">
-                                <i class="fa fa-circle" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="vertical-timeline-content">
-                                <div class="ivu-form-item-label-md">
-                                    <label>19:04:21</label>
+            <div class="module">
+                <div class="title">
+                    <ul class="tab-box clearfix">
+                        <li class="active">消息记录</li>
+                        <li class="line"></li>
+                        <li>流转记录</li>
+                    </ul>
+                </div>
+                <div class="tab-content-box">
+                    <!--消息记录-->
+                    <div class="tab-content ">
+                        <div class="news-item-box">
+                            <div class="news-item">
+                                <div class="time-box">
+                                    <p class="time">2018-07-29</p>
+                                    <p class="line"></p>
                                 </div>
-                                <div class="ivu-form-item-content-md ">
-                                    中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vertical-timeline-block">
-                            <div class="vertical-timeline-icon ">
-                                <i class="fa fa-circle" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="vertical-timeline-content">
-                                <div class="ivu-form-item-label-md">
-                                    <label>19:04:21</label>
-                                </div>
-                                <div class="ivu-form-item-content-md ">
-                                    中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台
+                                <div class="news-content">
+                                    <p class="news-content-user user"><span>张三张三（1111111）</span><span> 10:38:20</span></p>
+                                    <p class="new-content-detail">
+                                        您好。我有个问题想咨询下。您好。我有个问题想咨询下。您好。我有个问题想咨询下。您好。我有个问题想咨询下。</p>
+                                    <p class="news-content-user service"><span>李四（1111111）</span><span> 10:38:20</span></p>
+                                    <p class="new-content-detail">
+                                        您好。我有个问题想咨询下。您好。我有个问题想咨询下。您好。我有个问题想咨询下。您好。我有个问题想咨询下。</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="vertical-timeline-block">
-                            <div class="vertical-timeline-icon ">
-                                <i class="fa fa-circle" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="vertical-timeline-content">
-                                <div class="ivu-form-item-label-md">
-                                    <label>19:04:21</label>
+                            <div class="news-item">
+                                <div class="time-box">
+                                    <p class="time">2018-07-30</p>
+                                    <p class="line"></p>
                                 </div>
-                                <div class="ivu-form-item-content-md ">
-                                    中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台
+                                <div class="news-content">
+                                    <p class="news-content-user user"><span>张三张三（1111111）</span><span> 10:38:20</span></p>
+                                    <p class="new-content-detail">
+                                        您好。我有个问题想咨询下。您好。我有个问题想咨询下。您好。我有个问题想咨询下。您好。我有个问题想咨询下。</p>
+                                    <p class="news-content-user service"><span>李四（1111111）</span><span> 10:38:20</span></p>
+                                    <p class="new-content-detail">
+                                        您好。我有个问题想咨询下。您好。我有个问题想咨询下。您好。我有个问题想咨询下。您好。我有个问题想咨询下。</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="vertical-timeline-block">
-                            <div class="vertical-timeline-icon ">
-                                <i class="fa fa-circle" aria-hidden="true"></i>
-                            </div>
 
-                            <div class="vertical-timeline-content">
-                                <div class="ivu-form-item-label-md">
-                                    <label>19:04:21</label>
+                        <div class="news-search">
+                            <div class="clearfix">
+                                <div class="col-sm-6 dateicon-box no-padding-right no-padding-left">
+                                    <input type="text" class="ipt-type" placeholder="请输入关键字"/>
+                                    <i class="fa fa-search" aria-hidden="true"></i>
                                 </div>
-                                <div class="ivu-form-item-content-md ">
-                                    中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台
+                                <div class="col-sm-6 dateicon-box no-padding-right">
+                                    <input type="text" class="ipt-type" id="date" autocomplete="off"/>
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="vertical-timeline-block">
-                            <div class="vertical-timeline-icon ">
-                                <i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
+                    <!--流转记录-->
+                    <div class="tab-content hide">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="col-xs-3 date">
+                                    <i class="fa fa-circle"></i> 2018-07-11
+                                    <br>
+                                    <small>12:20:30</small>
+                                </div>
+                                <div class="col-xs-9 content no-top-border">
+                                    <p class="m-b-xs">操作人：张三</p>
+                                    <p>指定李四为负责人</p>
+
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="col-xs-3 date">
+                                    <i class="fa fa-circle"></i> 2018-07-11
+                                    <br>
+                                    <small>12:20:30</small>
+                                </div>
+                                <div class="col-xs-9 content no-top-border">
+                                    <p class="m-b-xs">操作人：张三</p>
+                                    <p>指定李四为负责人</p>
+
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="col-xs-3 date">
+                                    <i class="fa fa-circle"></i> 2018-07-11
+                                    <br>
+                                    <small>12:20:30</small>
+                                </div>
+                                <div class="col-xs-9 content no-top-border">
+                                    <p class="m-b-xs">操作人：张三</p>
+                                    <p>指定李四为负责人</p>
+
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="col-xs-3 date">
+                                    <i class="fa fa-circle"></i> 2018-07-11
+                                    <br>
+                                    <small>12:20:30</small>
+                                </div>
+                                <div class="col-xs-9 content no-top-border">
+                                    <p class="m-b-xs">操作人：张三</p>
+                                    <p>指定李四为负责人</p>
+
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="col-xs-3 date">
+                                    <i class="fa fa-circle"></i> 2018-07-11
+                                    <br>
+                                    <small>12:20:30</small>
+                                </div>
+                                <div class="col-xs-9 content no-top-border">
+                                    <p class="m-b-xs">操作人：张三</p>
+                                    <p>指定李四为负责人</p>
+
+                                </div>
                             </div>
 
-                            <div class="vertical-timeline-content">
-                                <div class="ivu-form-item-label-md">
-                                    <label>19:04:21</label>
-                                </div>
-                                <div class="ivu-form-item-content-md ">
-                                    中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台 中国石化共享服务平台
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -248,64 +380,7 @@
                             <li>完毕</li>
                         </ul>
                     </div>
-                    <div>
-                        <div class="tab-content">
-                            <div class="ivu-form-item">
-                                <div class="ivu-form-item-label-lg">
-                                    <label>当前处理人：</label>
-                                </div>
-                                <div class="ivu-form-item-content-lg ">
-                                    张三
-                                </div>
-                            </div>
-                            <div class="ivu-form-item">
-                                <div class="ivu-form-item-label-lg">
-                                    <label>受理时间：</label>
-                                </div>
-                                <div class="ivu-form-item-content-lg ">
-                                    2018/07/16
-                                </div>
-                            </div>
-                            <div class="ivu-form-item">
-                                <div class="ivu-form-item-label-lg">
-                                    <label>受理周期：</label>
-                                </div>
-                                <div class="ivu-form-item-content-lg ">
-                                    2018/07/16
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-content hide">
-                            <div class="ivu-form-item">
-                                <div class="ivu-form-item-label-lg">
-                                    <label>当前处理人：</label>
-                                </div>
-                                <div class="ivu-form-item-content-lg ">
-                                    李四
-                                </div>
-                            </div>
-                            <div class="ivu-form-item">
-                                <div class="ivu-form-item-label-lg">
-                                    <label>受理时间：</label>
-                                </div>
-                                <div class="ivu-form-item-content-lg ">
-                                    2018/07/16
-                                </div>
-                            </div>
-                            <div class="ivu-form-item">
-                                <div class="ivu-form-item-label-lg">
-                                    <label>受理周期：</label>
-                                </div>
-                                <div class="ivu-form-item-content-lg ">
-                                    2018/07/16
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -313,6 +388,8 @@
 </div>
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
+<!--日期控件-->
+<script src="../../js/plugins/layDate/laydate.js"></script>
 <!--页面js-->
 <script src="../../js/pages/interactivequery/interactiveDetail.js"></script>
 </body>
