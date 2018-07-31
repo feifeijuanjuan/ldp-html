@@ -16,3 +16,13 @@ $(function () {
         $("#uploadfile").parent().before("<div class='service-upload'>"+filename+"<i class=\"fa fa-times-circle\" aria-hidden=\"true\"></i></div>");
     });
 });
+// 交互状态
+function openConfirm() {
+    layer.confirm('<i class="fa fa-exclamation-circle layicon" aria-hidden="true"></i>确定点击完毕吗？点击完毕后交互记录将无法进行流转。', {
+        title:false,
+        btnAlign: 'c',
+        area: ['200px', '140px'],
+        closeBtn:0,
+        btn: ['取消','确定'],
+    });
+}

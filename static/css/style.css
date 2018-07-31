@@ -9257,7 +9257,7 @@ input {
 }
 
 .ivu-form-item-content-lg {
-    margin-left: 80px;
+    margin-left: 85px;
     position: relative;
 }
 
@@ -9265,7 +9265,7 @@ input {
     margin-top: 5px;
     float: left;
     text-align: right;
-    width: 80px;
+    width: 85px;
 }
 
 .mr15 {
@@ -9412,7 +9412,7 @@ textarea:focus {
     text-align: center;
     line-height: 24px;
     border: 1px solid #e1e1e1;
-    /*cursor: pointer;*/
+    cursor: pointer;
 }
 
 .query-statu li:nth-of-type(1) {
@@ -9789,14 +9789,61 @@ ul, li {
 .service-upload .fa-times-circle {
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
     color: #bababa;
     display: none;
     cursor: pointer;
 }
-.service-upload:hover{
+
+.service-upload:hover {
     background-color: #e1f0f9;
 }
-.service-upload:hover .fa-times-circle{
+
+.service-upload:hover .fa-times-circle {
     display: inline-block;
+}
+
+.layicon {
+    color: #ffab00;
+    font-size: 18px;
+    margin-right: 10px
+}
+
+.layui-layer-dialog .layui-layer-btn {
+    background-color: #fff;
+    padding-bottom: 10px !important;
+}
+
+.layui-layer-dialog .layui-layer-btn1 {
+    background-color: #fff !important;
+    color: #1E9FFF !important;
+    border-color: #1E9FFF !important;
+}
+
+.layui-layer-dialog .layui-layer-btn0 {
+    background-color: #fff !important;
+    color: #bababa !important;
+    border-color: #bababa !important;
+}
+
+.ivu-tabs-nav li {
+    float: left;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.ivu-tabs-nav li.active {
+    color: #4eb3fa;
+    font-weight: bold;
+    border-bottom: 2px solid #4eb3fa;
+}
+.ivu-tabs-nav {
+    background-color: #fff;
+    padding: 15px 15px 0px 5px;
+}
+.ivu-tabs-nav .line{
+    height: 15px;
+    border-right: 1px solid #e1e1e1;
 }

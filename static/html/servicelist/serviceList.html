@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--双核浏览器默认选择 WebKit 内核渲染-->
+    <meta name="renderer" content="webkit">
+    <title>共享服务中心-服务单</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/plugins/jqgrid/ui.jqgridffe4.css">
+    <link rel="stylesheet" href="../../css/plugins/bootstrap-select/bootstrap-select.css">
+    <link href="../../css/style.css" rel="stylesheet">
+</head>
+<body class="gray-bg" style="overflow-y: hidden">
+<div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="heading">
+        服务单
+    </div>
+    <ul class="ivu-tabs-nav clearfix">
+        <li class="ivu-tabs-tab active">财务共享</li>
+        <li class="line"></li>
+        <li class="ivu-tabs-tab">费用报销</li>
+        <li class="line"></li>
+        <li class="ivu-tabs-tab">HR业务</li>
+        <li class="line"></li>
+        <li class="ivu-tabs-tab">IT业务</li>
+    </ul>
+    <div class="vu-tabs-content">
+        <!--财务共享-->
+        <div class="ivu-tabs-tabpane">
+            <!--查询条件-->
+            <div class="search-box clearfix" style="border-bottom: none">
+                <div class="row clearfix">
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>业务类型：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请类型：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请编号：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <input type="text" class="ipt-type"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请日期范围：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg dateicon-box">
+                            <input type="text" class="ipt-type" id="applydate" autocomplete="off"/>
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请人：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg dateicon-box">
+                            <input type="text" class="ipt-type"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请状态：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="fr mb10">
+                        <button class="ipt-btn btnprimary mr5">查询</button>
+                        <button class="ipt-btn btndefault mr15">重置</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="content" style="padding-top: 5px">
+                <!--表格-->
+                <div class="jqGrid_wrapper">
+                    <table id="financeTable"></table>
+                    <!--每页导航-->
+                    <!--每页显示多少-->
+                </div>
+            </div>
+        </div>
+        <!--费用报销-->
+        <div class="ivu-tabs-tabpane hide">
+
+        </div>
+        <!--HR业务-->
+        <div class="ivu-tabs-tabpane hide">
+            <!--查询条件-->
+            <div class="search-box clearfix" style="border-bottom: none">
+                <div class="row clearfix">
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>服务目录：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请类型：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请编号：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <input type="text" class="ipt-type"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请日期范围：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg dateicon-box">
+                            <input type="text" class="ipt-type" id="HR-applydate" autocomplete="off"/>
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请人：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg dateicon-box">
+                            <input type="text" class="ipt-type"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>申请状态：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>人事范围：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>服务对象：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg dateicon-box">
+                            <input type="text" class="ipt-type"/>
+                        </div>
+
+                    </div>
+                    <div class="fr mb10">
+                        <button class="ipt-btn btnprimary mr5">查询</button>
+                        <button class="ipt-btn btndefault mr15">重置</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="content" style="padding-top: 5px">
+                <!--表格-->
+                <div class="jqGrid_wrapper">
+                    <table id="HR-Table"></table>
+                    <!--每页导航-->
+                    <!--每页显示多少-->
+                </div>
+            </div>
+        </div>
+
+        <!--IT业务-->
+        <div class="ivu-tabs-tabpane hide">
+            <!--查询条件-->
+            <div class="search-box clearfix" style="border-bottom: none">
+                <div class="row clearfix">
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>服务分类1：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>服务分类2：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>服务分类3：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>服务单号：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg dateicon-box">
+                            <input type="text" class="ipt-type">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>提报日期范围：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg dateicon-box">
+                            <input type="text" class="ipt-type" id="IT-applydate" autocomplete="off"/>
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>提报人：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg dateicon-box">
+                            <input type="text" class="ipt-type"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>服务单状态：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <select class="selectpicker ipt-type" title="">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-3 ">
+                        <div class="ivu-form-item-label-lg">
+                            <label>服务描述：</label>
+                        </div>
+                        <div class="ivu-form-item-content-lg">
+                            <input type="text" class="ipt-type"/>
+                        </div>
+                    </div>
+                    <div class="fr mb10">
+                        <button class="ipt-btn btnprimary mr5">查询</button>
+                        <button class="ipt-btn btndefault mr15">重置</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="content" style="padding-top: 5px">
+                <!--表格-->
+                <div class="jqGrid_wrapper">
+                    <table id="IT-Table"></table>
+                    <!--每页导航-->
+                    <!--每页显示多少-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<!--表格插件-->
+<script src="../../js/plugins/jqgrid/i18n/grid.locale-cnffe4.js"></script>
+<script src="../../js/plugins/jqgrid/jquery.jqGrid.minffe4.js"></script>
+<script src="../../js/jqgrid.js"></script>
+<!--弹窗插件-->
+<script src="../../js/plugins/layer/layer.js"></script>
+<!--日期控件-->
+<script src="../../js/plugins/layDate/laydate.js"></script>
+<!--下拉别表-->
+<script src="../../js/plugins/bootstrap-select/bootstrap-select.js"></script>
+<!--页面js-->
+<script src="../../js/pages/servicelist/serviceList.js"></script>
+</body>
+</html>
